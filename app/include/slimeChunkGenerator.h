@@ -6,7 +6,7 @@
 
 
 namespace slimeChunkChecker{
-    bool isSlimeChunk(long seed, int xPosition, int zPosition){
+    bool isSlimeChunk(uint64_t seed, int xPosition, int zPosition){
         return Random::randomInt(
             seed +
             (int) (xPosition * xPosition * 0x4c1906) +
